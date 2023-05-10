@@ -12,7 +12,8 @@ X_j =
 
 For a predetermined positive integer **M**, the test stops after pair N where N is the first value of n such that either:
 ```math
-X_1 + ... + X_n - (Y_1 + ... + Y_n) = M,
+X_1 + ... + X_n - (Y_1 + ... + Y_n) = M,or
+X_1 + ... + X_n - (Y_1 + ... + Y_n) = -M
 ```
 
 This project is avaliable on: https://github.com/yhchang99/Drug-Testing-Simulation-in-C
@@ -46,7 +47,7 @@ make
 ## Example
 Here's an example usage of the program:
 
-```
+```bash
 Drug Testing Parameters:
     Drug 1 cure rate:        0.60
     Drug 2 cure rate:        0.40
