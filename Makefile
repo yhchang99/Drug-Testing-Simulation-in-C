@@ -1,7 +1,7 @@
 CC = gcc
 gambler-ruin:
 	$(CC) -o  DrugTesting main.c
-plot:data.dat
+plot:
 	gnuplot -p script.gp
 clean:
-	rm -f DrugTesting data.dat
+	rm -f DrugTesting data/data*.dat image/results.jpg
