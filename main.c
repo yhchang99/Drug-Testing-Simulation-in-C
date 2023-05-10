@@ -5,8 +5,8 @@
 // Define starting parameters of simulation
 #define DRUG_1_CURE_RATE		0.6		// cure rate of drug 1
 #define DRUG_2_CURE_RATE	    0.4		// cure rate of drug 2
-#define M						10      // M is the number of cures needed to stop the test
-#define NUM_GAMES 				10000  	// Number of tests until reach condition M
+#define M						5      // M is the number of cures needed to stop the test
+#define NUM_TESTS 				10000  	// Number of tests until reach condition M
 
 // Define color commands
 #define RESET 					"\x1b[0m"
@@ -27,7 +27,7 @@ int main()
 	int totalRounds = 0;
     int totalDrug1Cure = 0, totalDrug2Cure = 0;
 
-	for(int i = 0; i < NUM_GAMES; i++ ){
+	for(int i = 0; i < NUM_TESTS; i++ ){
         // Track number of cures and not cures for each person
         int Drug1Cure = 0, Drug1NotCure = 0;
 	    int Drug2Cure = 0, Drug2NotCure = 0;
@@ -41,22 +41,21 @@ int main()
             outcome2 < rate2? Drug2Cure++ : Drug2NotCure++;
             round++;
 		}
+		Drug1Cure-Drug2Cure > 0 ? totalDrug1Cure++ : totalDrug2Cure++;
 		totalRounds += round;
-        totalDrug1Cure += Drug1Cure;
-        totalDrug2Cure += Drug2Cure;
 	}
 
 	// Calculate average number of rounds by dividing sum by the number of test
-	float averageRounds  = totalRounds / NUM_GAMES;
+	float averageRounds  = totalRounds / NUM_TESTS;
 	// Display the results of the simulation
 	printf( "%110sAverage number of rounds needed: %.2f.\n"
 			"Results:\n"
-			"    " BOLD "%sDrug1" RESET ":   %.4f%%\n"
-			"    " BOLD "%sDrug2" RESET ":   %.4f%%\n",
+			"    " BOLD "%sDrug1 finish the test with prob" RESET ":   %.4f%%\n"
+			"    " BOLD "%sDrug2 finish the test with prob" RESET ":   %.4f%%\n",
 			"\n", averageRounds, 
 			totalDrug1Cure < totalDrug2Cure ? F_RED : F_GREEN,
-            100 * (float) totalDrug1Cure/totalRounds, 
+            100 * (float) totalDrug1Cure/NUM_TESTS , 
 			totalDrug2Cure < totalDrug1Cure ? F_RED : F_GREEN,
-			100 * (float) totalDrug2Cure/totalRounds);
+			100 * (float) totalDrug2Cure/NUM_TESTS );
 	return 0;
 } 
