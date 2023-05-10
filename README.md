@@ -52,14 +52,14 @@ Here's an example usage of the program:
 ```bash
 ***********************************************
 Drug Testing Parameters:
-    Drug 1 cure rate:        0.60
-    Drug 2 cure rate:        0.40
-    test stop at M :           10
+    Drug 1 cure rate:        0.90
+    Drug 2 cure rate:        0.50
+    test stop at M :           1
                                                                                                              
-Average number of rounds needed: 50.00.
+Average number of rounds needed: 2.00.
 Results:
-    Drug1:   59.9678%
-    Drug2:   40.0639%
+    Drug1 finish the test with prob:   90.2900%
+    Drug2 finish the test with prob:   9.7100%
 ***********************************************
 ```
-![image](https://hackmd.io/_uploads/HJKDdCu42.png)
+![Image text](https://github.com/yhchang99/Drug-Testing-Simulation-in-C/anderson/images/results.png)

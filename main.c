@@ -3,8 +3,8 @@
 #include <time.h>						
 
 // Define starting parameters of simulation
-#define DRUG_1_CURE_RATE		0.6		// cure rate of drug 1
-#define DRUG_2_CURE_RATE	    0.4		// cure rate of drug 2
+#define DRUG_1_CURE_RATE		0.9		// cure rate of drug 1
+#define DRUG_2_CURE_RATE	    0.5		// cure rate of drug 2
 #define NUM_TESTS 				10000  	// Number of tests until reach condition M
 // Define color commands
 #define RESET 					"\x1b[0m"

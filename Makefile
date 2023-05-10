@@ -4,4 +4,4 @@ gambler-ruin:
 plot:data.dat
 	gnuplot -p script.gp
 clean:
-	rm -f DrugTesting data.dat results.png
+	rm -f DrugTesting data.dat
