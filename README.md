@@ -15,6 +15,7 @@ For a predetermined positive integer **M**, the test stops after pair N where N 
 \begin{cases}
 X_1 + ... + X_n - (Y_1 + ... + Y_n) = M \\ 
 X_1 + ... + X_n - (Y_1 + ... + Y_n) = -M
+\end{cases}
 ```
 
 This project is avaliable on: https://github.com/yhchang99/Drug-Testing-Simulation-in-C
