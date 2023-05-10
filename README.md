@@ -67,6 +67,6 @@ Results:
     Drug2 finish the test with prob:   9.7100%
 ***********************************************
 ```
-![Image text](https://github.com/yhchang99/Drug-Testing-Simulation-in-C/blob/anderson/image/results.png)
+![Image text](https://github.com/yhchang99/Drug-Testing-Simulation-in-C/blob/anderson/image/results.jpg)
 
-In this case, when Drug 1 cure rate is 0.9 (cure) and Drug 2 cure rate is 0.5 (placebo) M = 2 the test will go wrong with prob 0.01
+
