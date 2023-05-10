@@ -32,7 +32,7 @@ git clone https://github.com/yhchang99/Drug-Testing-Simulation-in-C.git
 ```
 Navigate to the project directory:
 ```bash
-cd gambler-ruin-c
+cd Drug-Testing-Simulation-in-C
 ```
 
 ## Compile the program:
