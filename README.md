@@ -69,4 +69,8 @@ Results:
 ```
 ![Image text](https://github.com/yhchang99/Drug-Testing-Simulation-in-C/blob/anderson/image/results.jpg)
 
+## License
+MIT License
+Copyright (c) 2023 yhchang99
+
 
