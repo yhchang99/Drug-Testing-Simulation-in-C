@@ -12,7 +12,8 @@ X_j =
 
 For a predetermined positive integer **M**, the test stops after pair N where N is the first value of n such that either:
 ```math
-X_1 + ... + X_n - (Y_1 + ... + Y_n) = M,or
+\begin{cases}
+X_1 + ... + X_n - (Y_1 + ... + Y_n) = M \\ 
 X_1 + ... + X_n - (Y_1 + ... + Y_n) = -M
 ```
 
