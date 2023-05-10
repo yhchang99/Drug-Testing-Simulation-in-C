@@ -45,8 +45,8 @@ make
 ```bash
 ./DrugTesting
 ```
-## Plot the results of the program:
-
+## Plot the results of the program
+To plot the diagram, you must have `gnuplot` installed on your local machine:
 ```bash
 make plot
 ```
