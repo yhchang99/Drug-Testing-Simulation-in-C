@@ -50,6 +50,7 @@ make
 Here's an example usage of the program:
 
 ```bash
+***********************************************
 Drug Testing Parameters:
     Drug 1 cure rate:        0.60
     Drug 2 cure rate:        0.40
@@ -59,7 +60,5 @@ Average number of rounds needed: 50.00.
 Results:
     Drug1:   59.9678%
     Drug2:   40.0639%
+***********************************************
 ```
-
-## License
-There is no license for this project.
