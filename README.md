@@ -62,3 +62,4 @@ Results:
     Drug2:   40.0639%
 ***********************************************
 ```
+![image](https://hackmd.io/_uploads/HJKDdCu42.png)
