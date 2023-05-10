@@ -2,17 +2,18 @@
 This program simulates the drug testing's problem in C. The drug testing problem is a scenario in which pairs of patients are treated sequentially with one member of the pair receiving drug 1 and the other drug 2.The results for each pair are determined, and the testing stops when the cumulative number of cures using one of the drugs exceeds the cumulative number of cures when using the other by some fixed predetermined number.
 
 More formally, let
-$$ X_j =
+```math
+X_j =
 \begin{cases}
 1, & \text{if the patient in the jth pair to receive drug number 1 is cured}\\
 0, & \text{otherwise}
 \end{cases}
-$$
+```
 
 For a predetermined positive integer **M**, the test stops after pair N where N is the first value of n such that either:
-$$
+```math
 X_1 + ... + X_n - (Y_1 + ... + Y_n) = M,
-$$
+```
 
 This project is avaliable on: https://github.com/yhchang99/Drug-Testing-Simulation-in-C
 
