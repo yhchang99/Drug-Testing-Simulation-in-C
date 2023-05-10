@@ -24,7 +24,7 @@ This project is avaliable on: https://github.com/yhchang99/Drug-Testing-Simulati
 In practice, this test can be used to compare the efficacy of two drugs in a clinical trial. The predetermined number **M** can be chosen based on the desired level of confidence and the sample size of the trial. The test can also be modified to allow for multiple pairs of patients to be treated simultaneously or to include a placebo group.
 
 ## Installation
-To compile and run the program, you must have a C compiler installed on your system, such as GCC or Clang.
+To compile and run the program, you must have a C compiler installed on your system, such as `GCC` or `Clang`.
 Clone the repository to your local machine:
 
 ```bash
